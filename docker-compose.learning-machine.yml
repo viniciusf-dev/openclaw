@@ -6,7 +6,6 @@ services:
     environment:
       LEARNING_MACHINE_API_URL: "http://agno-api:8000"
     volumes:
-      - ./skills/learning-machine:/app/skills/learning-machine:ro
       - ./extensions/learning-machine:/app/extensions/learning-machine:ro
 
   openclaw-cli:
@@ -14,7 +13,6 @@ services:
     environment:
       LEARNING_MACHINE_API_URL: "http://agno-api:8000"
     volumes:
-      - ./skills/learning-machine:/app/skills/learning-machine:ro
       - ./extensions/learning-machine:/app/extensions/learning-machine:ro
 
 networks:
