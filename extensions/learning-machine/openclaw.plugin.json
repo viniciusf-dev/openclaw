@@ -1,0 +1,27 @@
+{
+  "id": "learning-machine",
+  "name": "Learning Machine",
+  "description": "Cross-channel memory bridge that persists user knowledge across WhatsApp, Slack, Telegram, Discord, and Teams via an external API.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiUrl": {
+        "type": "string"
+      },
+      "defaultChannel": {
+        "type": "string"
+      }
+    }
+  },
+  "uiHints": {
+    "apiUrl": {
+      "label": "API URL",
+      "help": "Base URL of the Learning Machine API. Example: http://agno-api:8000"
+    },
+    "defaultChannel": {
+      "label": "Default Channel",
+      "help": "Fallback channel identifier (discord, slack, telegram, whatsapp, teams)"
+    }
+  }
+}
